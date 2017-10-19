@@ -56,7 +56,7 @@ public class Serializacion1 {
       Mclase mcla = new Mclase();
         try {
             ObjectInputStream lectura = new ObjectInputStream(new FileInputStream(fichero));
-            
+           
            mcla =(Mclase) lectura.readObject();
         } catch (FileNotFoundException ex) {
             Logger.getLogger(Serializacion1.class.getName()).log(Level.SEVERE, null, ex);
